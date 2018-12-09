@@ -1,0 +1,6 @@
+3dd3f31827f3edb4c3cc6b00faf3bcda  usr/bin/yui-compressor
+6858f3ee9113fc42a7596ed1b916a3ba  usr/share/doc/yui-compressor/changelog.Debian.gz
+57f7b5e18c93da93d050cd81af25e667  usr/share/doc/yui-compressor/changelog.gz
+6e7fed719075b8a6dbbd32ee60b52242  usr/share/doc/yui-compressor/copyright
+8499497430a30ae204db6fe0f5418909  usr/share/maven-repo/com/yahoo/platform/yui/yuicompressor/debian/yuicompressor-debian.pom
+0532fd2325d42d28ab40eb1f689b7f93  usr/share/yui-compressor/yui-compressor.jar

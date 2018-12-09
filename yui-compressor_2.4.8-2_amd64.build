@@ -1,0 +1,209 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package yui-compressor
+dpkg-buildpackage: info: source version 2.4.8-2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by tony mancill <tmancill@debian.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+	ant clean
+Buildfile: /dev/shm/builddeps/yui-compressor/yui-compressor/build.xml
+
+-load.properties:
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+   dh_clean
+FAKEROOTKEY=1379615443 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	ant -Duser.name debian
+Buildfile: /dev/shm/builddeps/yui-compressor/yui-compressor/build.xml
+
+-load.properties:
+
+-init:
+    [mkdir] Created dir: /dev/shm/builddeps/yui-compressor/yui-compressor/build
+
+-updateversion:
+     [copy] Copying 126 files to /dev/shm/builddeps/yui-compressor/yui-compressor/build/build_tmp
+
+build.classes:
+    [mkdir] Created dir: /dev/shm/builddeps/yui-compressor/yui-compressor/build/classes
+    [javac] Using javac -source 1.5 is no longer supported, switching to 6
+    [javac] Using javac -target 1.5 is no longer supported, switching to 6
+    [javac] Compiling 124 source files to /dev/shm/builddeps/yui-compressor/yui-compressor/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 6
+    [javac] warning: [options] source value 6 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.6 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 4 warnings
+
+build.jar:
+    [mkdir] Created dir: /dev/shm/builddeps/yui-compressor/yui-compressor/build/jar
+     [copy] Copying 199 files to /dev/shm/builddeps/yui-compressor/yui-compressor/build/jar
+      [jar] Building jar: /dev/shm/builddeps/yui-compressor/yui-compressor/build/yuicompressor-2.4.8.jar
+
+BUILD SUCCESSFUL
+Total time: 12 seconds
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/dev/shm/builddeps/yui-compressor/yui-compressor'
+# Launch tests
+(cd tests; bash ./suite.sh)
+jar: ../build/yuicompressor-2.4.8.jar
+Passed: background-position.css
+Passed: border-none.css
+Passed: box-model-hack.css
+Passed: bug2527974.css
+Passed: bug2527991.css
+Passed: bug2527998.css
+Passed: bug2528034.css
+Passed: charset-media.css
+Passed: color.css
+Passed: color-keyword.css
+Passed: color-simple.css
+Passed: comment.css
+Passed: concat-charset.css
+Passed: dataurl-base64-doublequotes.css
+Passed: dataurl-base64-eof.css
+Passed: dataurl-base64-linebreakindata.css
+Passed: dataurl-base64-noquotes.css
+Passed: dataurl-base64-singlequotes.css
+Passed: dataurl-base64-twourls.css
+Passed: dataurl-dbquote-font.css
+Passed: dataurl-nonbase64-doublequotes.css
+Passed: dataurl-nonbase64-noquotes.css
+Passed: dataurl-nonbase64-singlequotes.css
+Passed: dataurl-noquote-multiline-font.css
+Passed: dataurl-realdata-doublequotes.css
+Passed: dataurl-realdata-noquotes.css
+Passed: dataurl-realdata-singlequotes.css
+Passed: dataurl-realdata-yuiapp.css
+Passed: dataurl-singlequote-font.css
+Passed: decimals.css
+Passed: dollar-header.css
+Passed: float.js
+Passed: font-face.css
+Passed: ie5mac.css
+Passed: jquery-1.6.4.js
+Passed: lowercasing.css
+Passed: media-empty-class.css
+Passed: media-multi.css
+Passed: media-test.css
+Passed: _munge.js
+Passed: opacity-filter.css
+Passed: opera-pixel-ratio.css
+Passed: preserve-case.css
+Passed: preserve-important.css
+Passed: preserve-new-line.css
+Passed: preserve-strings.css
+Passed: pseudo.css
+Passed: pseudo-first.css
+Passed: special-comments.css
+Passed: star-underscore-hacks.css
+Passed: _string_combo.js
+Passed: string-in-comment.css
+Passed: _syntax_error.js
+Passed: webkit-transform.css
+Passed: zeros.css
+
+now testing the JS port of CSSMIN...
+Passed: background-position.css
+Passed: border-none.css
+Passed: box-model-hack.css
+Passed: bug2527974.css
+Passed: bug2527991.css
+Passed: bug2527998.css
+Passed: bug2528034.css
+Passed: charset-media.css
+Passed: color.css
+Passed: color-keyword.css
+Passed: color-simple.css
+Passed: comment.css
+Passed: concat-charset.css
+Passed: dataurl-base64-doublequotes.css
+Passed: dataurl-base64-eof.css
+Passed: dataurl-base64-linebreakindata.css
+Passed: dataurl-base64-noquotes.css
+Passed: dataurl-base64-singlequotes.css
+Passed: dataurl-base64-twourls.css
+Passed: dataurl-dbquote-font.css
+Passed: dataurl-nonbase64-doublequotes.css
+Passed: dataurl-nonbase64-noquotes.css
+Passed: dataurl-nonbase64-singlequotes.css
+Passed: dataurl-noquote-multiline-font.css
+Passed: dataurl-realdata-doublequotes.css
+Passed: dataurl-realdata-noquotes.css
+Passed: dataurl-realdata-singlequotes.css
+Passed: dataurl-realdata-yuiapp.css
+Passed: dataurl-singlequote-font.css
+Passed: decimals.css
+Passed: dollar-header.css
+Passed: font-face.css
+Passed: ie5mac.css
+Passed: lowercasing.css
+Passed: media-empty-class.css
+Passed: media-multi.css
+Passed: media-test.css
+Passed: opacity-filter.css
+Test failed: opera-pixel-ratio.css
+
+Expected:
+.something{foo:bar}
+
+Actual:
+@media(-o-min-device-pixel-ratio:10/4),(-o-max-device-pixel-ratio:5/4),(-o-device-pixel-ratio:1/1),(-o-device-pixel-ratio:1/.something{foo:bar}
+make[1]: Leaving directory '/dev/shm/builddeps/yui-compressor/yui-compressor'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/dev/shm/builddeps/yui-compressor/yui-compressor'
+# Rename JAR file
+cp build/yuicompressor-2.4.8.jar build/yui-compressor.jar
+dh_auto_install
+make[1]: Leaving directory '/dev/shm/builddeps/yui-compressor/yui-compressor'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'yui-compressor' in '../yui-compressor_2.4.8-2_all.deb'.
+FAKEROOTKEY=959904199 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../yui-compressor_2.4.8-2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: unapplying tokenstream.patch
+dpkg-source: info: unapplying token.patch
+dpkg-source: info: unapplying parser.patch
+dpkg-source: info: unapplying decompiler.patch
+dpkg-source: info: unapplying use-system-libraries.patch
+dpkg-source: info: unapplying fix_testsuite.diff
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian yui-compressor_2.4.8-2_amd64.changes ...
+W: yui-compressor: binary-without-manpage usr/bin/yui-compressor
+Finished running lintian.
